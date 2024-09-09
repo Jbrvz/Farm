@@ -1,0 +1,145 @@
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
+
+/*-------------------- CSS RESET ---------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+    --green: #06A816;
+    --orange: #E75D02;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+body {
+    font-family: 'Habibi', sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+h1, h2, h3 {
+    font-family: 'Irish Grover', cursive;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3, p {
+    font-size: 1.25em;
+}
+
+/* -------------------- HEADER SECTION (mobile first/small) --------------------*/
+
+.header {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    
+}
+
+.header p {
+    margin: 0;
+    font-size: 1.25em;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+/* -------------------- NAVIGATION -------------------- */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 40px 0;
+    text-align: center; /* Ensure the buttons stay centered */
+}
+
+nav ul li {
+    display: block; /* Make each list item a block element */
+    margin: 15px 0; /* Add vertical space between buttons */
+}
+
+nav ul li a {
+    background-color: var(--orange);  /* Button style */
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.25em;
+    padding: 10px 20px;  /* Padding for button feel */
+    border-radius: 5px;  /* Rounded edges */
+    display: inline-block;
+    width: 100%; /* Make sure the buttons stretch across */
+    max-width: 250px; /* Optional: Set max-width for the buttons */
+}
+
+
+
+
+
+
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+
+
+
