@@ -79,6 +79,7 @@ h2 {
 
 h3, p {
     font-size: 1.25em;
+    line-height: 1.5em;
 }
 
 /* -------------------- HEADER SECTION (mobile first/small) --------------------*/
@@ -104,36 +105,121 @@ h3, p {
     font-style: italic;
 }
 
-/* -------------------- NAVIGATION -------------------- */
+/* -------------------- NAVIGATION BUTTONS (mobile first/small) -------------------- */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 40px 0;
-    text-align: center; /* Ensure the buttons stay centered */
+    text-align: center; 
 }
 
 nav ul li {
-    display: block; /* Make each list item a block element */
-    margin: 15px 0; /* Add vertical space between buttons */
+    display: block;
+    margin: 15px 0;
 }
 
 nav ul li a {
-    background-color: var(--orange);  /* Button style */
+    background-color: var(--orange);  
     color: var(--white);
     text-decoration: none;
     font-size: 1.25em;
-    padding: 10px 20px;  /* Padding for button feel */
-    border-radius: 5px;  /* Rounded edges */
+    padding: 10px 20px;
+    border-radius: 5px;
     display: inline-block;
-    width: 100%; /* Make sure the buttons stretch across */
-    max-width: 250px; /* Optional: Set max-width for the buttons */
+    width: 100%;
+    max-width: 250px;
+}
+
+/* -------------------- SECTION STYLES (mobile first/small) -------------------- */
+.section {
+    padding: 30px 20px;
+    text-align: left;
+    color: var(--black);
+}
+
+.section p {
+    padding-bottom: 20px;
+}
+
+.section h2 {
+    padding-bottom: 10px;
+}
+
+.section h3{
+    text-align: center;
+}
+
+/* -------------------- GRID STYLES FOR FRUITS/VEGETABLES (mobile first/small) -------------------- */
+.Fruits-Photo-Grid, .Vegetables-Photo-Grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column grid for mobile */
+    gap: 20px;
+    padding: 30px;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+    color: var(--white);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px; /* Optional: Adds space around the text */
+    width: 145px;
+}
+
+/* -------------------- FOOTER (mobile first/small) -------------------- */
+.footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footer h2{
+    margin-bottom: 10px;
+}
+
+.contact{
+    margin: 30px 0 50px 0;
+    
 }
 
 
+.copyright {
+    text-align: center; /* Centering text inside the container */
+    padding: 10px 0; /* Padding for top and bottom */
+    border-top: 1px solid #ddd; /* Optional: border for visual separation */
+    color: var(--green);
+}
 
-
-
-
+#backToTop p{
+    display: block; 
+    color: var(--white); 
+    background-color: var(--orange); 
+    border: 2px solid var(--white); 
+    position: fixed; 
+    bottom: 20px; 
+    right: 0; 
+    margin: 0; 
+    padding: 14px 10px; 
+    z-index: 5; 
+    border-radius: 5px; 
+    text-align: center; 
+    text-decoration: none; 
+}
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 
