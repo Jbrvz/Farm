@@ -149,10 +149,10 @@ nav ul li a {
     text-align: center;
 }
 
-/* -------------------- GRID STYLES FOR FRUITS/VEGETABLES (mobile first/small) -------------------- */
+/* -------------------- GRID STYLES FOR FRUITS/VEGETABLES GRID (mobile first/small) -------------------- */
 .Fruits-Photo-Grid, .Vegetables-Photo-Grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column grid for mobile */
+    grid-template-columns: 1fr; 
     gap: 20px;
     padding: 30px;
 }
@@ -174,8 +174,8 @@ nav ul li a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    padding: 10px; /* Optional: Adds space around the text */
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
     width: 145px;
 }
 
@@ -199,11 +199,12 @@ nav ul li a {
 
 
 .copyright {
-    text-align: center; /* Centering text inside the container */
-    padding: 10px 0; /* Padding for top and bottom */
-    border-top: 1px solid #ddd; /* Optional: border for visual separation */
+    text-align: center; 
+    padding: 10px 0; 
     color: var(--green);
 }
+
+/* -------------------- BACK TO TOP (mobile first/small) -------------------- */
 
 #backToTop p{
     display: block; 
@@ -223,7 +224,137 @@ nav ul li a {
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 
+@media (min-width: 834px) {
+
+/* -------------------- HEADER SECTION (medium) --------------------*/
+
+.header {
+    display: flex;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    
+}
+
+.header p {
+    margin: 0;
+    font-size: 1.25em;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+/* -------------------- NAVIGATION BUTTONS (medium) -------------------- */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+nav ul li a {
+    background-color: var(--orange);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.25em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    width: 100%; 
+    text-align: center;
+}
+
+/* -------------------- GRID STYLES FOR FRUITS/VEGETABLES GRID (medium) -------------------- */
+.Fruits-Photo-Grid, .Vegetables-Photo-Grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+    gap: 60px 80px;
+    padding: 30px;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+    color: var(--white);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    width: 145px;
+}
+
+/* -------------------- FOOTER (medium) -------------------- */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer h2{
+    margin-bottom: 10px;
+}
+
+.contact{
+    margin: 30px 0 50px 0;
+    
+}
+
+
+.copyright {
+    text-align: center; 
+    padding: 10px 0; 
+    color: var(--green);
+}
+
+}
+
+
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
+
+@media (min-width: 834px) {
+
+/* -------------------- HEADER SECTION (medium) --------------------*/
+
+
+
+}
+
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 
