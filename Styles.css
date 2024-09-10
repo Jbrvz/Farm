@@ -85,10 +85,8 @@ h3, p {
 /* -------------------- HEADER SECTION (mobile first/small) --------------------*/
 
 .header {
-    background-color: var(--green);
     color: var(--white);
     text-align: center;
-    padding: 10px;
 }
 
 .header h1 {
@@ -105,30 +103,33 @@ h3, p {
     font-style: italic;
 }
 
+.header-title-container{
+    background-color: var(--green);
+    padding: 10px;
+}
+
 /* -------------------- NAVIGATION BUTTONS (mobile first/small) -------------------- */
-nav ul {
+.nav-container nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 40px 0;
-    text-align: center; 
-}
+    margin: 0;
+    display: grid;
+    padding: 60px;
+    gap: 15px;
+  }
 
-nav ul li {
+  .nav-container nav ul li a {
     display: block;
-    margin: 15px 0;
-}
-
-nav ul li a {
-    background-color: var(--orange);  
+    background-color: var(--orange);
     color: var(--white);
+    text-align: center;
+    padding: 12px 20px;
     text-decoration: none;
-    font-size: 1.25em;
-    padding: 10px 20px;
     border-radius: 5px;
-    display: inline-block;
-    width: 100%;
-    max-width: 250px;
-}
+    border: 2px solid var(--white);
+ 
+  }
+
 
 /* -------------------- SECTION STYLES (mobile first/small) -------------------- */
 .section {
@@ -227,67 +228,27 @@ nav ul li a {
 @media (min-width: 834px) {
 
 /* -------------------- HEADER SECTION (medium) --------------------*/
-
-.header {
+.header-title-container{
     display: flex;
     background-color: var(--green);
     color: var(--white);
-    padding: 10px 20px 10px 10px;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
-}
 
-.header h1 {
-    margin: 0;
-    padding-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    
-}
-
-.header p {
-    margin: 0;
-    font-size: 1.25em;
-    padding-bottom: 10px;
-    font-style: italic;
 }
 
 /* -------------------- NAVIGATION BUTTONS (medium) -------------------- */
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    max-width: 900px;
-    justify-content: center;
-    text-align: center;
-}
-
-nav ul li {
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-}
-
-nav ul li a {
-    background-color: var(--orange);
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1.25em;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: block;
-    width: 100%; 
-    text-align: center;
-}
+.nav-container nav ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 
 /* -------------------- GRID STYLES FOR FRUITS/VEGETABLES GRID (medium) -------------------- */
 .Fruits-Photo-Grid, .Vegetables-Photo-Grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(6, auto);
     gap: 60px 80px;
     padding: 30px;
 }
@@ -321,7 +282,7 @@ nav ul li a {
     align-items: center;
     background-color: var(--green);
     color: var(--white);
-    padding: 20px;
+    padding: 50px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -329,12 +290,6 @@ nav ul li a {
 .footer h2{
     margin-bottom: 10px;
 }
-
-.contact{
-    margin: 30px 0 50px 0;
-    
-}
-
 
 .copyright {
     text-align: center; 
@@ -344,19 +299,75 @@ nav ul li a {
 
 }
 
-
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 
-@media (min-width: 834px) {
+@media (min-width: 1280px) {
 
-/* -------------------- HEADER SECTION (medium) --------------------*/
+/* -------------------- HEADER SECTION (large) --------------------*/
+.header{
+    background-color: var(--green);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
 
+.header-title-container {
+    display: block;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.header-title-container h1 {
+    margin-bottom: 5px;
+}
+
+/* -------------------- NAVIGATION BUTTONS (large) -------------------- */
+
+.nav-container nav ul{
+    padding-right: 30px;
+}
+
+/* -------------------- GRID STYLES FOR FRUITS/VEGETABLES GRID (large ) -------------------- */
+.Fruits-Photo-Grid, .Vegetables-Photo-Grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+
+
+}
+
+/* -------------------- FOOTER (large) -------------------- */
+
+.contact {
+    display: flex;
+    align-items: center; 
+    gap: 80px;           
+}
+
+.hours {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+#backToTop p{
+    margin-right: 10px;
+}
+
+
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+
+@media (min-width: 1280px) {
+
+/* -------------------- GRID STYLES FOR FRUITS/VEGETABLES GRID (large ) -------------------- */
+.Fruits-Photo-Grid, .Vegetables-Photo-Grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
 
 
 }
 
 
-/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-
-
-
+}
